@@ -17,3 +17,23 @@ button {
     cursor: pointer;
     display: block;
 }
+
+.main__container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 10rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.main__input {
+    background-color: #ccc;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 100px;
+}
