@@ -1,4 +1,5 @@
 const input = document.querySelector('.main__input'); 
+let sum = 0;
 
 function selectButtons() {
     const btns = document.querySelectorAll('.main__btn');
@@ -26,8 +27,14 @@ function addEventListeners() {
         btn.addEventListener('click', (event) => {
             if (event.target.textContent === 'AC') {
                 clearInput();
+            } else if (event.target.textContent === '=') {
+                changeParagraph(calculate(input.textContent));
             } else {
-                changeParagraph(event.target);
+                if (event.target.textContent === '+') {
+                    addToSum(input.textContent);
+                } else {
+                    changeParagraph(event.target);
+                }
             }
         });
     }
@@ -35,6 +42,12 @@ function addEventListeners() {
 
 function clearInput() {
     input.textContent = '0';
+    sum = 0;
+}
+
+function addToSum(amount) {
+    sum += +amount;
+    console.log(sum);
 }
 
 addEventListeners();
