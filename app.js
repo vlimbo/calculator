@@ -13,7 +13,7 @@ function addEventListeners() {
 
     for (let btn of btns) {
         btn.addEventListener('click', (event) => {
-            console.log(event.target.textContent);
+            changeParagraph(event.target);
         });
     }
 }
