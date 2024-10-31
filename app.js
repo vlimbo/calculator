@@ -24,13 +24,17 @@ function addEventListeners() {
 
     for (let btn of btns) {
         btn.addEventListener('click', (event) => {
-            changeParagraph(event.target);
+            if (event.target.textContent === 'AC') {
+                clearInput();
+            } else {
+                changeParagraph(event.target);
+            }
         });
     }
 }
 
 function clearInput() {
-
+    input.textContent = '0';
 }
 
 addEventListeners();
