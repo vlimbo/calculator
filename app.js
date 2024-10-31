@@ -5,6 +5,11 @@ function selectButtons() {
 
 function changeParagraph(btn) {
     const input = document.querySelector('.main__input'); 
+
+    if (input.textContent === '0') {
+        input.textContent = '';
+    }
+
     input.textContent = input.textContent + btn.textContent;
 }
 
