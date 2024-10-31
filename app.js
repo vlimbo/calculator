@@ -1,4 +1,9 @@
 function selectButtons() {
-    btns = document.querySelectorAll('.main__btn');
+    const btns = document.querySelectorAll('.main__btn');
     return btns;
+}
+
+function changeParagraph(btn) {
+    const input = document.querySelector('.main__input'); 
+    input.textContent = btn.textContent;
 }
