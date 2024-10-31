@@ -63,3 +63,7 @@ button {
 .main__btn-last {
     background-color: #ccc;
 }
+
+.main__btn--flex2 {
+    flex: 3.5;
+}
