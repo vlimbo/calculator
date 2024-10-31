@@ -5,5 +5,5 @@ function selectButtons() {
 
 function changeParagraph(btn) {
     const input = document.querySelector('.main__input'); 
-    input.textContent = btn.textContent;
+    input.textContent = input.textContent + btn.textContent;
 }
