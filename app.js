@@ -32,6 +32,8 @@ function addEventListeners() {
             } else {
                 if (event.target.textContent === '+') {
                     addToSum(input.textContent);
+                } else if (event.target.textContent === '-' {
+                    subToSum(input.textContent);
                 } else {
                     changeParagraph(event.target);
                 }
