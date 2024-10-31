@@ -50,4 +50,9 @@ function addToSum(amount) {
     console.log(sum);
 }
 
+function subToSum(amount) {
+    sum -= +amount;
+    console.log(amount);
+}
+
 addEventListeners();
