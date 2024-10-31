@@ -1,10 +1,11 @@
+const input = document.querySelector('.main__input'); 
+
 function selectButtons() {
     const btns = document.querySelectorAll('.main__btn');
     return btns;
 }
 
 function changeParagraph(btn) {
-    const input = document.querySelector('.main__input'); 
 
     if (btn.textContent === ',' && input.textContent === '0') {
         input.textContent = input.textContent + btn.textContent;
@@ -26,6 +27,10 @@ function addEventListeners() {
             changeParagraph(event.target);
         });
     }
+}
+
+function clearInput() {
+
 }
 
 addEventListeners();
